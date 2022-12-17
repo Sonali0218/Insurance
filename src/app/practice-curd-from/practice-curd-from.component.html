@@ -1,0 +1,30 @@
+<!-- <p>practice-curd-from works!</p> -->
+<h1> Curd Application From</h1>
+
+<div class="contaniner bg-success">
+    <form name="myForm" #frm="ngForm">
+        <div class="form-group mb-3">
+            <label for="firstname">firstName :<span style="color: red;">*</span></label>
+            <input type="text" name="fname" class="form-control" #fname="ngModel" [(ngModel)]="fna" ngModel required [ngClass]="{'is-invaild':frm.submitted && fname.invalid}" placeholder="please Enter your name">
+            <div *ngIf="frm.submitted && fname.invalid" class="invaild-feedback">First Name is required</div>
+            
+        </div>
+        <div class="form-group mb-3">
+            <label for="lastname"> Last Name :<span style="color: red;">*</span></label>
+            <input type="text" name="lnmae" class="form-control" #lname="ngModel" [(ngModel)]="la" ngModel required [ngClass]="{'is-invaild':frm.submitted && lname.invalid}" placeholder="Please Enter your last name">
+            <div *ngIf="frm.submitted && lname.invalid" class="invalid-feedback"></div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="email">Email:<span style="color: red;">*</span></label>
+            <input type="email" name="email" class="form-control" #email="ngModel" [(ngModel)]="mail" ngModel required [ngClass]="{'is-invaild':frm.submitted && email.invalid}" placeholder="enter ur email"
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+            <div *ngIf="email.touched" class="invaild-feedback">
+                <p *ngIf="email.errors?.['required']">email required </p>
+                <p *ngIf="email.errors?.['pattern']"> pattern is required</p>
+            </div>
+        </div>
+        <div>
+            <button class="btn btn-info" *ngIf="submitButton" (click)="onsubmitfrom(frm)" ngSubmit="myForm.form.vaild && onsubmit(myForm)">Submit</button>
+        </div>
+    </form>
+</div>

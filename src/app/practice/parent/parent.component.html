@@ -1,0 +1,6 @@
+<p>parent works!</p>
+
+
+<h2>Data From Child is: &nbsp;{{dataFromChildToParent}}</h2>
+
+<app-child [parentData]="datafromparenttochild" (itemEvent)="emitDataFromchild($event)"></app-child>

@@ -1,0 +1,34 @@
+<p>home works!</p>
+<!-- <div class="item">
+    <h2 style="text-align: center;">Home</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quaerat repellendus dignissimos dolore
+        debitis, ab tempora ratione facere vero dolor perferendis odit optio rerum est, aliquam totam delectus et nulla
+        omnis iure? Sit deserunt, recusandae atque quas voluptatem natus asperiores temporibus modi quaerat rerum rem
+        obcaecati nisi consectetur sunt culpa cum sapiente tenetur quo soluta eos officia impedit et. Error. ipsum dolor
+        sit amet consectetur adipisicing elit. Maiores voluptatibus consequatur, debitis perspiciatis
+        nobis sapiente veritatis modi eaque harum placeat distinctio nihil, officiis ipsum eveniet soluta. Ut nobis
+        laborum harum!</p>
+</div> -->
+
+
+
+
+
+
+<table class="table table-stripped">
+    <tr>
+        <th>Id</th>
+        <th>fname</th>
+        <th>lname</th>
+        <th>Age</th>
+        <!-- <th>Action</th> -->
+    </tr>
+    <tr *ngFor="let dt of staffData">
+        <td>{{dt.id}}</td>
+        <td>{{dt.fname}}</td>
+        <td>{{dt.lname}}</td>
+        <td>{{dt.age}}</td>
+        <td><button class="btn btn-info" (click)="showDetailsStaff(dt)">Show Details</button></td>
+    </tr>
+
+</table>

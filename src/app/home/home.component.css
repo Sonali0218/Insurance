@@ -1,0 +1,10 @@
+/* .item{
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 20px;
+    background-color: aqua;
+} */
+
+table td,th ,tr{
+    border: 1px solid black;
+}

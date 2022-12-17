@@ -1,0 +1,54 @@
+<p>formdata works!</p>
+<div class="page-area">
+    <h2 class="text-center">Forms</h2>
+    <br>
+    <div class="contanier border-top pt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Add Products</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="id"> Id</label>
+                        <input type="text" class="form-control" id="id" #id>
+                    </div>
+                    <div class="form-group">
+                        <label for="name"> Name</label>
+                        <input type="text" class="form-control" id="name" #name>
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" class="form-control" id="price" #price>
+                    </div>
+                    <button type="button" class="btn btn-primary" (click)="onAddProduct(id,name,price)"> Add
+                        Product</button> &nbsp; 
+                    <button type="button" class="btn btn-success" (click)="onSaveProduct()">Save Product</button> &nbsp; &nbsp;
+                    <button type="button" class="btn btn-warning" (click)="onFetchProduct()"> Fetch Product</button> &nbsp;
+
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>{{dataTitle}}</h2>
+                <table class="table table-borded">
+                
+                        <tr>
+                            <th >#</th>
+                            <th >id</th>
+                            <th >name</th>
+                            <th >price</th>
+                            <th >delete</th>
+
+                        </tr>
+                
+                <tr *ngFor="let product of products; index as i">
+                    <th scope="row">{{i+1}}</th>
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td (click)="onDeleteProduct(i)"><a class="text-danger"><i class='far fa-trash-alt'></i></a></td>
+
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+</div>

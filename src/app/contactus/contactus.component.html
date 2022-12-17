@@ -1,0 +1,20 @@
+<p>contactus works!</p>
+
+<table class="table table-info">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+        <!-- <th>Action</th> -->
+
+    </tr>
+    <tr *ngFor="let a of data">
+        <td>{{a.id }}</td>
+        <td>{{a.name}}</td>
+        <td>{{a.username }}</td>
+        <td>{{a.email}}</td>
+        <td><button class="btn btn-primary" (click)="userdetails(a)">UserDetails</button></td>
+
+    </tr>
+</table>

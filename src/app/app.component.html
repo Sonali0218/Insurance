@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  routerLink="staff">Staff</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigatetoStud()">Student</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="contact">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="staffdetails">staffdetails</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="parent">Intercommnuication</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="first">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="second">Second</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="sampletest">Sample Test</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="sampletest2">Sample Test2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="form">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="parent2">Practice</a>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link" routerLink="second">Second</a>
+        <select (change)="onSelectUGmenu($event)">
+          <option #dt *ngFor="let i of ug" value="{{i.path}}">{{i.name}}</option>
+        </select>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="pg/pgstaff">PG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="**">Error Page</a> -->
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container ">
+  <router-outlet></router-outlet>
+</div> 
+
+
+<app-practice-curd-from></app-practice-curd-from>
+
+
