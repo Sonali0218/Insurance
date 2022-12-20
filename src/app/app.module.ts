@@ -20,6 +20,7 @@ import { SampletestComponent } from './sampletest/sampletest.component';
 import { Sampletest2Component } from './sampletest2/sampletest2.component';
 import { FormdataComponent } from './firebase/formdata/formdata.component';
 import { PracticeCurdFromComponent } from './practice-curd-from/practice-curd-from.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PracticeCurdFromComponent } from './practice-curd-from/practice-curd-fr
    SampletestComponent,
    Sampletest2Component,
    FormdataComponent,
-   PracticeCurdFromComponent
+   PracticeCurdFromComponent,
+   TestComponent
   
   ],
   imports: [
